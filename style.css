@@ -1,0 +1,79 @@
+/* Scrolling effect */
+html
+{
+  scroll-behavior: smooth;
+}
+
+/* Styling the Navigation Bar */
+ul
+{
+  position: fixed; /* fixing the position of the navigation  bar */
+  top: 0; /* fixing it at the top of the page */
+  list-style-type: none;
+  padding: 0 290px;
+  width: 1230px;
+  height: 40px;
+  background-color:black;
+  justify-content: space-between; /* adding space between list items */
+  align-items: center; /* aligning the list items to center */
+  
+}
+
+nav
+{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+}
+
+.active 
+{
+  background-color: #D8D8D8; /* changing colour for the active navbar menu item */
+}
+
+li 
+{
+  display: inline; /* setting the display of the navbar */
+  float: left; /* placing the items in a line */
+}
+
+li a 
+{
+  display: block; /* setting the display of the navbar menu items */
+  color: #fffaf6;
+  width:60px
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right-left: 1px solid #bbb;
+}
+
+li a:hover 
+{
+  background-color: #D8D8D8; /* changing the background colour of the navbar item when the cursor hovers on it */
+  color: black; /* changing the colour of the navbar item when the cursor hovers on it */
+  height: 40px;
+}
+
+/* Styling the cover image */
+.image 
+{
+  overflow: hidden; /* removing the excess part of the image and fitting it to screen */
+  height: 550px;
+  width: 100%;
+}
+
+.centered {
+  position: absolute; /* positioning text on the cover image */
+  top: 50%; /* center aligning text */
+  left: 50%; /* center aligning text */
+  transform: translate(-50%, -50%); /* center aligning text */
+  color: white;
+  background-color: black;
+  font-size: 35px;
+  font-weight: 700; 
+  padding: 0 10px;
+}
